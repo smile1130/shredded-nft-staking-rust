@@ -1,0 +1,13 @@
+[programs.devnet]
+shred_staking = "FtTLiU8ohFqghRNjKEtYfzs8PWtD1Tdk2W6eaA77c5Kb"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+#cluster = "http://127.0.0.1:8899"
+cluster = "devnet"
+wallet = "/home/fury/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
