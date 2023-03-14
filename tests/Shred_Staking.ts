@@ -16,7 +16,6 @@ describe('Shred_Staking', async () => {
   const provider = anchor.Provider.env();
   anchor.setProvider(provider);
   // const payer = provider.wallet;
-  // console.log('Payer: ', payer.publicKey.toBase58());
   
   const program = anchor.workspace.ShredStaking as Program<ShredStaking>;
   console.log('ProgramId: ', program.programId.toBase58());
